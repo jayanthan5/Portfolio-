@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jai’s Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><button onclick="scrollToSection('about')">About Me</button></li>
+      <li><button onclick="scrollToSection('skills')">Skills</button></li>
+      <li><button onclick="scrollToSection('projects')">Projects</button></li>
+      <li><button onclick="scrollToSection('certifications')">Certifications</button></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Jai — a resilient, practical learner focused on backend development, responsive design, and health optimization.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java & Spring Boot</li>
+        <li>Responsive Web Design</li>
+        <li>Command-line Workflows (Termux, Ubuntu)</li>
+        <li>IDE Efficiency (VS Code)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Mobile-First Spring Boot App on Termux (proof of concept)</li>
+        <li>Responsive Static Portfolio (HTML/CSS)</li>
+        <li>Health Product Research Dashboard</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Java Backend Development (Coursera/Udemy)</li>
+        <li>Responsive Web Design (freeCodeCamp)</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
